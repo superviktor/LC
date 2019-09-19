@@ -18,8 +18,8 @@ namespace LC.Web.API.Controllers
             _mapper = mapper;
         }
         
-        [HttpGet("deck/{id}")]
-        public IActionResult Get(Guid id)
+        [HttpGet("deck")]
+        public IActionResult Get()
         {
             var deck = _deckService.GetDeck(Guid.Empty);
             var deckViewModel = _mapper.Map<DeckViewModel>(deck);

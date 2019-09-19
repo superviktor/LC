@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
+using LC.Application.Service;
 using LC.Application.Service.Base;
 using LC.Persistence.Repository;
+using LC.Web.API.AutoMapperProfiles;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -22,15 +24,10 @@ namespace LC.Web.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            var mappingConfig = new MapperConfiguration(mc =>
-            {
-                mc.AddProfile(new AutoMapperProfiles.MapProfile());
-            });
-
-            var mapper = mappingConfig.CreateMapper();
-
+            services.AddAutoMapper(typeof(MapProfile));
             services.AddTransient<IDeckRepository, DeckRepository>();
-            services.AddTransient<IDeckService, IDeckService>();
+            services.AddTransient<ICardRepository, CardRepository>();
+            services.AddTransient<IDeckService, DeckService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

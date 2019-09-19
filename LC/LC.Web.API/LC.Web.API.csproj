@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LC.Application.Service.Base\LC.Application.Service.Base.csproj" />
+    <ProjectReference Include="..\LC.Application.Service\LC.Application.Service.csproj" />
     <ProjectReference Include="..\LC.Persistence.Model\LC.Persistence.Model.csproj" />
     <ProjectReference Include="..\LC.Persistence.Repository\LC.Persistence.Repository.csproj" />
   </ItemGroup>
