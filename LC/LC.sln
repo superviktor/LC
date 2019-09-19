@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC.Application.Service.Base
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC.Application.Service", "LC.Application.Service\LC.Application.Service.csproj", "{58234EFB-F556-4A23-A9FF-54D968513ED5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC.Sevice.Model", "LC.Sevice.Model\LC.Sevice.Model.csproj", "{0E7AC302-989E-44FF-876A-F9FB298BCB2F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC.Service.Model", "LC.Sevice.Model\LC.Service.Model.csproj", "{0E7AC302-989E-44FF-876A-F9FB298BCB2F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC.Domain.Model.Base", "LC.Domain.Model.Base\LC.Domain.Model.Base.csproj", "{AFB968D0-9D3D-401D-B0B0-E3C32DFF9928}"
 EndProject

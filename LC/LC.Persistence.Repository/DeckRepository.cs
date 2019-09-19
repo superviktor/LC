@@ -4,7 +4,7 @@ using LC.Persistence.Model;
 
 namespace LC.Persistence.Repository
 {
-    public class DeckRepository : IRepository<Deck>
+    public class DeckRepository : IDeckRepository
     {
         public Deck Get(Guid id)
         {
@@ -22,6 +22,11 @@ namespace LC.Persistence.Repository
         }
 
         public void Update(Deck entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Save(Deck entity)
         {
             throw new NotImplementedException();
         }

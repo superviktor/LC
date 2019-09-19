@@ -10,5 +10,6 @@ namespace LC.Persistence.Base
         void Add(TEntity entity);
         void Remove(TEntity entity);
         void Update(TEntity entity);
+        void Save(TEntity entity);
     }
 }

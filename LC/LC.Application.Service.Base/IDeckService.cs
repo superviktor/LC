@@ -6,7 +6,7 @@ namespace LC.Application.Service.Base
 {
     public interface IDeckService
     {
-        Deck GetDeck(Guid userId);
+        Deck GetDeck(Guid id);
         void AddCard(DeckCardModel deckCardModel);
     }
 }
